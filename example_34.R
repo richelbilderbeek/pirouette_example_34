@@ -17,12 +17,12 @@ folder_name <- paste0("example_", example_no)
 is_testing <- is_on_ci()
 if (is_testing) {
   n_phylogenies <- 2
+  n_taxa <- 3
 }
 
 # Create simulation function
-sim_dd_tree_fun <- function(crown_age) {
+sim_dd_tree_fun <- function(crown_age, n_taxa) {
   extinction_rate <- 0.1
-  n_taxa <- 6
   n_0 <- 2 # Initial number of species at stem/crown of tree
   diff <- (log(n_taxa) - log(n_0)) / crown_age
   speciation_rate <- 3.0 * (diff + extinction_rate)
@@ -35,7 +35,8 @@ sim_dd_tree_fun <- function(crown_age) {
 }
 sim_tree_fun <- pryr::partial(
   sim_dd_tree_fun,
-  crown_age = crown_age
+  crown_age = crown_age,
+  n_taxa = n_taxa
 )
 
 # Create phylogenies
