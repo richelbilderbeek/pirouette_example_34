@@ -1,0 +1,60 @@
+rm: cannot remove ‘*.png’: No such file or directory
+Loading required package: beautier
+Loading required package: babette
+Loading required package: beastier
+Loading required package: mauricer
+Loading required package: tracerer
+Registered S3 method overwritten by 'pryr':
+  method      from
+  print.bytes Rcpp
+Error in sim_dd_tree_fun(crown_age = crown_age, n_taxa = n_taxa, ...) : 
+  object 'n_taxa' not found
+Calls: sim_tree_fun -> sim_dd_tree_fun
+Execution halted
+
+real	0m8.899s
+user	0m0.869s
+sys	0m0.317s
+	zip warning: name not matched: example_34
+	zip warning: name not matched: *.png
+  adding: example_34.R (deflated 60%)
+  adding: scripts/ (stored 0%)
+  adding: scripts/rerun.sh (deflated 44%)
+
+
+###############################################################################
+Peregrine Cluster
+Job 10255420 for user 'p230198'
+Finished at: Sat Mar 21 19:30:34 CET 2020
+
+Job details:
+============
+
+Name                : pirex34
+User                : p230198
+Partition           : gelifes
+Nodes               : pg-node211
+Cores               : 1
+State               : COMPLETED
+Submit              : 2020-03-21T19:30:22
+Start               : 2020-03-21T19:30:22
+End                 : 2020-03-21T19:30:34
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:00:12
+Used CPU time       :   00:00:01 (efficiency: 10.26%)
+% User (Computation): 71.32%
+% System (I/O)      : 28.68%
+Mem reserved        : 10G/node
+Max Mem used        : 0.00  (pg-node211)
+Max Disk Write      : 0.00  (pg-node211)
+Max Disk Read       : 0.00  (pg-node211)
+
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Peregrine in your publications:
+
+https://wiki.hpc.rug.nl/peregrine/additional_information/scientific_output
+
+################################################################################
