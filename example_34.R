@@ -11,7 +11,7 @@ library(ggplot2)
 # Constants
 example_no <- 34
 rng_seed <- 314
-crown_age <- 10
+crown_age <- 20
 n_phylogenies <- 10
 n_taxa <- 6
 folder_name <- paste0("example_", example_no)
